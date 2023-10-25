@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+  main_app:
+    build:
+      dockerfile: Dockerfile
+      context: ./finance-manager-api
+      target: production
+    volumes:
+      - .:/usr/src/app
+    container_name: bank_app
+    restart: on-failure
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: example
+      DB_NAME: bank_app
+
+    ports:
+      - 3000:3000
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: bank_app

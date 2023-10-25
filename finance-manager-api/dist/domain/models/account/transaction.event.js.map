@@ -1,0 +1,1 @@
+{"version":3,"file":"transaction.event.js","sourceRoot":"","sources":["../../../../src/domain/models/account/transaction.event.ts"],"names":[],"mappings":";;;AAOA,MAAa,gBAAgB;IAC3B,YACkB,WAA8B,EAC9B,IAA0B;QAD1B,gBAAW,GAAX,WAAW,CAAmB;QAC9B,SAAI,GAAJ,IAAI,CAAsB;IACzC,CAAC;CACL;AALD,4CAKC"}
